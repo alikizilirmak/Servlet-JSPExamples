@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>ServletTutorial</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+  	<param-name>fullName</param-name>
+  	<param-value>Ali Kizilirmak</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>emailAddress</param-name>
+  	<param-value>akizilirmak@anadolu.edu.tr</param-value>
+  </context-param>
+  
+  <servlet>
+  	<servlet-name>ServletContextClass</servlet-name>
+  	<servlet-class>servlet.context.example.ServletContextClass</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ServletContextClass</servlet-name>
+  	<url-pattern>/ServletContextClass</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>myServlet</servlet-name>
+    <servlet-class>helloServlet.HelloServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>myServlet</servlet-name>
+    <url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ServletConfigClass</servlet-name>
+  	<servlet-class>servletConfig.ServletConfigClass</servlet-class>
+  	<init-param>
+  		<param-name>ali</param-name>
+  		<param-value>Ali Kizilirmak</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>baris</param-name>
+  		<param-value>Baris Kizilirmak</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ServletConfigClass</servlet-name>
+  	<url-pattern>/ServletConfigClass</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
