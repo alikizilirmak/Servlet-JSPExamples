@@ -1,1 +1,1 @@
-"# Java Servlet ve JSP ™rnekleri" 
+"# Java Servlet & JSP Examples" 
